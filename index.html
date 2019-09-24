@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>3주차 과제</title>
+	<style type="text/css">
+		#t2{text-align: center;margin-top: 100px;}
+		#nba{width: 150px;display: block;position: absolute;top: 175px; left: 680px;transition: all ease 0.5s;}
+		#nba:hover{transform: scale( 1.2 );}
+		#lj{animation: po1 1.5s infinite;animation-iteration-count: 1;} @keyframes po1{from{left: 1450px;}to{left: 1150px;}}
+		#mj{animation: po2 1.5s infinite;animation-iteration-count: 1;} @keyframes po2{from{left: -250px;}to{left: 250px;}}
+		#sc{animation: po3 1.5s infinite;animation-iteration-count: 1;} @keyframes po3{from{left: 1350px;}to{left: 850px;}}
+		#so{animation: po4 1.5s infinite;animation-iteration-count: 1;} @keyframes po4{from{left: -480px;}to{left: 20px;}}
+		#lj2{opacity: 0;}
+		#mj2{opacity: 0;}
+		#sc2{opacity: 0;}
+		#t1{text-align: center; color: white; font-weight: bold;font-size: 3em;}
+	</style>
+</head>
+<body id="mybody">
+	<h1 id="t2">Click!</h1>
+	<h1 id="t1">Welcome to<br>NBA</h1>
+	<img src="nba.png" id="nba">
+	<img src="lebron.png" id="lj" style="display: block;position: absolute;top: 20px; left: 1150px;">
+	<img src="jorden.png" id="mj" style="display: block;position: absolute;top: 50px; left: 250px;">
+	<img src="curry.png" id="sc" style="display: block;position: absolute;top: 320px; left: 850px;">
+	<img src="oneal.png" id="so" style="display: block;position: absolute;top: 380px; left: 20px;">
+	<img src="lebron.gif" id="lj2" style=" width: 40%;display: block;position: absolute;top: 0px; left: 930px;">
+	<img src="jorden.gif" id="mj2" style=" width: 35%;display: block;position: absolute;top: 80px; left: 70px;">
+	<img src="curry.gif" id="sc2" style=" width: 33%;display: block;position: absolute;top: 380px; left: 685px;">
+	<audio id="sd">
+		<source src="slamdunk.mp3" type="audio/mpeg">
+	</audio>
+	<script type="text/javascript">
+		nba.onclick = function(){
+		t2.style.opacity = "0";
+		nba.style.opacity = "0";
+		lj.style.opacity = "0";
+		mj.style.opacity = "0";
+		sc.style.opacity = "0";
+		so.style.opacity = "0";
+		lj2.style.opacity = "1";
+		mj2.style.opacity = "1";
+		sc2.style.opacity = "1";
+		sd.play();
+		mybody.style.background = "black";
+		}
+	</script>
+</body>
+</html>
+
+
